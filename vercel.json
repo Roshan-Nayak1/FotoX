@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/routes(.*)",
-            "destination": "/"
+            "source": "/routes/(.*)",
+            "destination": "/$1"
         }
     ]
 }
