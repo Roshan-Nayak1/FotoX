@@ -1,18 +1,8 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
         {
-            "src": "routes/index.js", // Adjust the pattern based on your project structure
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "handle": "filesystem"
-        },
-        {
-            "src": "/.*",
-            "dest": "/routes/index.js" // Adjust the path to match your project structure
+            "source": "/routes(.*)",
+            "destination": "/"
         }
     ]
 }
